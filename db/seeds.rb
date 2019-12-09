@@ -6,9 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-easy = Level.create(difficulty: "easy")
-intermediate = Level.create(difficulty: "intermediate")
-hard = Level.create(difficulty: "hard")
+Level.destroy_all
+Score.destroy_all
+
+easy = Level.create(difficulty: "easy", speed: 15.5)
+intermediate = Level.create(difficulty: "intermediate", speed: 20.5)
+hard = Level.create(difficulty: "hard", speed: 30.0)
 
 raq = Score.create(username: "Raq", value: 1_000, level: easy)
 hope = Score.create(username: "Hope", value: 10_000, level: intermediate)

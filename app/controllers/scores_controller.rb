@@ -1,7 +1,7 @@
 class ScoresController < ApplicationController
     before_action :set_score, only: [:update, :show, :delete]
     def index 
-        @scores = Score.all 
+        @scores = Score.all.sort_by{|x| x.value}.reverse[0..9]
         render json: @scores
     end
 
