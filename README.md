@@ -8,7 +8,10 @@ Facesmasher is a fun game where a user can click on falling faces and collect po
 After learning JavaScript for the first time, my partner and I wanted to create something fun to exercise our new knowledge on click events, integrating a frontend with rails backend and try out using a library!
 
 ## Technologies
-P5 library
+p5.play library: https://molleindustria.github.io/p5.play/
+
+## Check out my Medium article on how to use the p5.js library: 
+https://medium.com/@brifetterley/using-the-p5-play-library-for-a-js-game-4df01708dd81?source=your_stories_page---------------------------
 
 <!-- ## Installation
 
